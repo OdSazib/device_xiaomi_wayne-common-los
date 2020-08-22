@@ -24,6 +24,9 @@
 # Inherit from sdm660-common
 $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 
+# Inherit G-Apps
+$(call inherit-product-if-exists, vendor/gapps/common/common-vendor.mk)
+
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 

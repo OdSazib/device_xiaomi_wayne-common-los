@@ -25,6 +25,9 @@
 # Inherit from sdm660-common
 include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 
+# Inherit G-Apps
+-include vendor/gapps/common/BoardConfigVendor.mk
+
 WAYNE_PATH := device/xiaomi/wayne-common
 
 # Display
